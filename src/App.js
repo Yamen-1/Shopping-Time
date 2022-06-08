@@ -59,10 +59,10 @@ function App() {
       <Navbar itemsCount={cardItems.length} />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products/" element={<Products />} />
+        <Route path="/Shopping-Time/" element={<Home />} />
+        <Route path="/Shopping-Time/products/" element={<Products />} />
         <Route
-          path="/products/:id"
+          path="/Shopping-Time/products/:id"
           element={
             <Product
               cardItems={cardItems}
@@ -72,7 +72,7 @@ function App() {
           }
         />
         <Route
-          path="/cart"
+          path="/Shopping-Time/cart"
           element={
             <Cart
               cardItems={cardItems}

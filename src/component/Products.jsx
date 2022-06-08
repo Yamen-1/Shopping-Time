@@ -102,10 +102,10 @@ export default function Products() {
                   </h3>
                   <h3 className="card-text lead fw-bold">$ {product.price}</h3>
                   <NavLink
-                    to={`/products/${product.id}`}
+                    to={`/Shopping-Time/products/${product.id}`}
                     className="btn btn-outline-dark fw-bold fs-3"
                   >
-                    Bay Now
+                    Buy Now
                   </NavLink>
                 </div>
               </div>

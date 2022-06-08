@@ -25,44 +25,53 @@ function Navbar({ itemsCount }) {
                 <NavLink
                   className="nav-link active  fw-bold fs-4 "
                   aria-current="page"
-                  to="/"
+                  to="/Shopping-Time/"
                 >
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link  fw-bold fs-4" to="/products/">
+                <NavLink
+                  className="nav-link  fw-bold fs-4"
+                  to="/Shopping-Time/products/"
+                >
                   Products
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link fw-bold fs-4" to="/about/">
+                <NavLink
+                  className="nav-link fw-bold fs-4"
+                  to="/Shopping-Time/about/"
+                >
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link fw-bold fs-4" to="/contact">
+                <NavLink
+                  className="nav-link fw-bold fs-4"
+                  to="/Shopping-Time/contact"
+                >
                   Contact
                 </NavLink>
               </li>
             </ul>
             <div className="buttons">
               <NavLink
-                to="/login"
+                to="/Shopping-Time/login"
                 className="btn btn-outline-light fw-bold fs-5"
               >
                 <i className="fa fa-sign-in me-1"></i>
                 Login
               </NavLink>
               <NavLink
-                to="/register"
+                to="/Shopping-Time/register"
                 className="btn btn-outline-light ms-2 fw-bold fs-5"
               >
                 <i className="fa fa-user-p1us me-1"></i>
                 Register
               </NavLink>
               <NavLink
-                to="/cart"
+                to="/Shopping-Time/cart"
                 className="btn btn-outline-light ms-2 fw-bold fs-5"
               >
                 <i className="fa fa-shopping-cart me-1"></i>

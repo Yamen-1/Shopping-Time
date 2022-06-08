@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/Shopping-Time/static/css/main.073c9b0a.css",
-    "main.js": "/Shopping-Time/static/js/main.2e5c53ee.js",
+    "main.css": "/Shopping-Time/static/css/main.69cdda64.css",
+    "main.js": "/Shopping-Time/static/js/main.1c860798.js",
     "static/js/787.28cb0dcd.chunk.js": "/Shopping-Time/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/Shopping-Time/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Shopping-Time/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/Shopping-Time/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/Shopping-Time/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/Shopping-Time/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/bg1.jpg": "/Shopping-Time/static/media/bg1.62b49976795c435f1e99.jpg",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Shopping-Time/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/Shopping-Time/index.html",
-    "main.073c9b0a.css.map": "/Shopping-Time/static/css/main.073c9b0a.css.map",
-    "main.2e5c53ee.js.map": "/Shopping-Time/static/js/main.2e5c53ee.js.map",
+    "main.69cdda64.css.map": "/Shopping-Time/static/css/main.69cdda64.css.map",
+    "main.1c860798.js.map": "/Shopping-Time/static/js/main.1c860798.js.map",
     "787.28cb0dcd.chunk.js.map": "/Shopping-Time/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2e5c53ee.js"
+    "static/css/main.69cdda64.css",
+    "static/js/main.1c860798.js"
   ]
 }

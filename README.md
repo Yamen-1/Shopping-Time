@@ -11,7 +11,7 @@ This simple shopping cart prototype shows how React with Typescript, React hooks
 
 ### Features
 
-- fitch Api
+- Fetch Api
 - Add and remove products from the floating cart
 - Add and remove products from the Local Storage
 - Style Bootstrap

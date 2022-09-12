@@ -15,7 +15,8 @@ export default function Products() {
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products");
+      const response = await fetch("https://api.escuelajs.co/api/v1/products");
+
       if (componentMounted) {
         setData(await response.clone().json());
         setFilter(await response.json());
@@ -47,8 +48,25 @@ export default function Products() {
       </>
     );
   };
+  useEffect(() => {
+    const getProduct = async () => {
+      setLoading(true);
+      const response = await fetch("https://api.escuelajs.co/api/v1/products");
+
+      if (componentMounted) {
+        setData(await response.clone().json());
+        setFilter(await response.json());
+        setLoading(false);
+        console.log(filter);
+      }
+      return () => {
+        componentMounted = false;
+      };
+    };
+    getProduct();
+  }, []);
   const filterProduct = (cat) => {
-    const updateList = data.filter((x) => x.category === cat);
+    const updateList = data.filter((x) => x.category.id === cat);
     setFilter(updateList);
   };
   const ShowProducts = () => {
@@ -63,27 +81,34 @@ export default function Products() {
           </button>
           <button
             className="btn btn-outline-dark me-2 fw-bold fs-4 "
-            onClick={() => filterProduct("men's clothing")}
+            onClick={() => filterProduct(1)}
           >
-            Men's Clothing
+            Clothes
           </button>
           <button
             className="btn btn-outline-dark me-2 fw-bold fs-4 "
-            onClick={() => filterProduct("women's clothing")}
+            onClick={() => filterProduct(2)}
           >
-            Women's Clothing
+            Electronics
+          </button>
+
+          <button
+            className="btn btn-outline-dark me-2 fw-bold fs-4 "
+            onClick={() => filterProduct(3)}
+          >
+            Furniture
           </button>
           <button
             className="btn btn-outline-dark me-2 fw-bold fs-4 "
-            onClick={() => filterProduct("jewelery")}
+            onClick={() => filterProduct(4)}
           >
-            Jewelry
+            Shoes
           </button>
           <button
             className="btn btn-outline-dark me-2 fw-bold fs-4 "
-            onClick={() => filterProduct("electronics")}
+            onClick={() => filterProduct(5)}
           >
-            Electronic
+            Others
           </button>
         </div>
         {filter.map((product) => {
@@ -91,7 +116,7 @@ export default function Products() {
             <div className="col-md-3 mb-4 ">
               <div className="card h-60 text-center p-4" key={product.id}>
                 <img
-                  src={product.image}
+                  src={product.images}
                   className="card-img-top"
                   alt={product.title}
                   height="500px"

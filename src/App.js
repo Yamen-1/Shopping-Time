@@ -40,7 +40,7 @@ function App() {
     const productExist = cardItems.find((item) => item.id === product.id);
     if (productExist.quantity === 1) {
       setCardItems(cardItems.filter((item) => item.id !== product.id));
-      localStorage.clear();
+      localStorage.removeItem(product);
     } else {
       setCardItems(
         cardItems.map((item) =>
@@ -61,6 +61,7 @@ function App() {
       <Routes>
         <Route path="/Shopping-Time/" element={<Home />} />
         <Route path="/Shopping-Time/products/" element={<Products />} />
+
         <Route
           path="/Shopping-Time/products/:id"
           element={

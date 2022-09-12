@@ -15,7 +15,9 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+      const response = await fetch(
+        `https://api.escuelajs.co/api/v1/products/${id}`
+      );
       setProduct(await response.json());
       setLoading(false);
     };
@@ -46,7 +48,7 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src={product.image}
+                src={product.images}
                 className="img-fluid rounded-start"
                 alt={product.title}
               />

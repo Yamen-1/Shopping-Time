@@ -15,9 +15,7 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      const response = await fetch(
-        `https://api.escuelajs.co/api/v1/products/${id}`
-      );
+      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
       setProduct(await response.json());
       setLoading(false);
     };
@@ -48,7 +46,7 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
           <div className="row g-0">
             <div className="col-md-4">
               <img
-                src={product.images}
+                src={product.image}
                 className="img-fluid rounded-start"
                 alt={product.title}
               />
@@ -71,10 +69,7 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
                   Add to Cart
                 </button>
 
-                <NavLink
-                  to="/Shopping-Time/cart"
-                  className="btn btn-dark ms-2 px-3 py-2"
-                >
+                <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">
                   Go to Cart
                 </NavLink>
               </div>

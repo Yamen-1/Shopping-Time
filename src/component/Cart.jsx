@@ -25,7 +25,7 @@ export default function Cart({
           <div key={product.id} className="cart-items-list">
             <img
               className="cart-items-img"
-              src={product.images}
+              src={product.image}
               alt={product.title}
             />
             <div className="cart-items-name">

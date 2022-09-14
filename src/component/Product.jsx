@@ -69,7 +69,10 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
                   Add to Cart
                 </button>
 
-                <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">
+                <NavLink
+                  to="/Shopping-Time/cart"
+                  className="btn btn-dark ms-2 px-3 py-2"
+                >
                   Go to Cart
                 </NavLink>
               </div>

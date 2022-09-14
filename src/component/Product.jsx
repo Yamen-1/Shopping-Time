@@ -79,6 +79,7 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
       </>
     );
   };
+  console.log(loading);
   return (
     <div>
       <div className="container py-5">
